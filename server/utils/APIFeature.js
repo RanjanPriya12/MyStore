@@ -45,6 +45,15 @@ class ApiFeatures {
       
     }
 
+    SubCategoryFilter(){
+      const subCat = this.queryStr.subCategory;
+      console.log(subCat);
+      if(cat)
+     this.query=this.query.find({subCategory:{$options:"i",$regex:`${subCat}`}});
+     return this;
+     
+   }
+
     colorFilter(){
       const color = this.queryStr.color;
       console.log(color);
