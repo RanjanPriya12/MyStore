@@ -25,7 +25,7 @@ const productSchema = new mongoose.Schema({
     rating: { type: Number, required: true, default:2.5 },
     category: { type: String, required: true },
     subCategory: { type: String, required: true },
-    user_id : {type : mongoose.Schema.Types.ObjectId, ref:"user", required : true}
+    // user_id : {type : mongoose.Schema.Types.ObjectId, ref:"user", required : true}
 },{
     timestamps : true,
     versionKey : false,
